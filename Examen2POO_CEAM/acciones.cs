@@ -58,15 +58,23 @@ namespace Examen2POO_CEAM
         }
         public void Actualizar(string nombrelibro)
         {
+            Console.WriteLine("Dame el libro a actualizar:");
+            string nombreantiguo = Console.ReadLine();
+           
+
             var libros = listalibros.Find(x => x.nombre == nombrelibro);
             if (libros != null)
             {
+                Console.WriteLine("Introduce el nuevo nombre del libro:");
                 libros.nombre = Console.ReadLine();
+                Console.WriteLine("Introduce la nueva editorial:");
                 libros.editorial = Console.ReadLine();
+                Console.WriteLine("Introduce el nuevo autor:");
                 libros.autor = Console.ReadLine();
+                Console.WriteLine("Introduce las nuevas paginas:");
                 libros.paginas = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Introduce el nuevo genero:");
                 libros.genero = Console.ReadLine();
-
                 Console.WriteLine("Codigo exitoso");
             }
             else
