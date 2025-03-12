@@ -72,7 +72,7 @@ namespace Examen2POO_CEAM
                 Console.WriteLine("Introduce el nuevo autor:");
                 libros.autor = Console.ReadLine();
                 Console.WriteLine("Introduce las nuevas paginas:");
-                libros.paginas = Convert.ToInt32(Console.ReadLine());
+                libros.paginas = int.Parse(Console.ReadLine());
                 Console.WriteLine("Introduce el nuevo genero:");
                 libros.genero = Console.ReadLine();
                 Console.WriteLine("Codigo exitoso");
