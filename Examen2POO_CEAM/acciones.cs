@@ -13,6 +13,8 @@ namespace Examen2POO_CEAM
 
         public void AgregarLibro()
         {
+            
+
             Console.WriteLine("Nombre:");
             l.nombre = Console.ReadLine();
             Console.WriteLine("Editorial:");
