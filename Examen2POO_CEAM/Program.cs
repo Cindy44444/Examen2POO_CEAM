@@ -34,7 +34,9 @@ namespace Examen2POO_CEAM
                         Acciones.EliminarLibros(nombre);
                         break;
                     case Menu.Actualizar:
-                       Acciones.Actualizar(nombre);
+                        Console.WriteLine("Dame el libro a eliminar:");
+                        string nombre2 = Console.ReadLine();
+                        Acciones.Actualizar(nombre2);
                         break;
                 }
             }
